@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Geometry genius subir || Push </title>
+    
+</head>
+
+<link href="https://cdn.jsdelivr.net/npm/daisyui@4.12.23/dist/full.min.css" rel="stylesheet" type="text/css" />
+<script src="https://cdn.tailwindcss.com"></script>
+
+<body>
+  <div class="navbar bg-base-100 ">
+    <div class="flex-1">
+      <a class="btn btn-ghost text-xl">daisyUI</a>
+    </div>
+    <div class="flex-none">
+      <button class="btn btn-primary ">Submit</button>
+    </div>
+  </div>
+    <section class="main-area  mt-4">
+        <div class="container mx-auto">
+             <div class="flex gap-3">
+                <div class="flex gap-3">
+                    <!-- Card Start -->
+                    <div class="card bg-base-100 w-96 shadow-xl">
+                        <figure>
+                          <img src="assets/images/triangle.png" alt="Shoes" />
+                        </figure>
+                        <div class="card-body ">
+                          <h2 class="card-title justify-center">Triangle</h2>
+                          <p class="text-center">Area (A) = 0.5 b h</p>
+                          <div class="flex w-64 mx-auto gap-3">
+                            <input type="text" id="triangle-base" placeholder="base"
+                            class="input input-bordered input-primary w-full max-w-xs" />
+                            <input type="text" id="triangle-height" placeholder="height"
+                            class="input input-bordered input-primary w-full max-w-xs" />
+                          </div>
+                          <div class="text-2xl">Total: <span id="result">0</span> cm <sup>2</sup></div>
+                          <div class="card-actions w-full">
+                            <button class="btn btn-primary w-full" onclick="calculateTriangle()">Calculate</button>
+                          </div>
+                        </div>
+                      </div>  
+                    <!-- Card Start -->
+                    <div class="card bg-base-100 w-96 shadow-xl">
+                        <figure>
+                          <img src="assets/images/rectangle.png" alt="Shoes" />
+                        </figure>
+                        <div class="card-body ">
+                          <h2 class="card-title justify-center">Rectangle</h2>
+                          <p class="text-center">Area (A) = w x I</p>
+                          <div class="flex w-64 mx-auto gap-3">
+                            <input type="text" id="rectangle-width" placeholder="w"
+                            class="input input-bordered input-primary w-full max-w-xs" />
+                            <input type="text" id="rectangle-length" placeholder="l"
+                            class="input input-bordered input-primary w-full max-w-xs" />
+                          </div>
+                          <div class="text-2xl">Total: <span id="resultRectangle">0</span> cm <sup>2</sup></div>
+                          <div class="card-actions w-full">
+                            <button class="btn btn-primary w-full" onclick="calculateRectangle()">Calculate</button>
+                          </div>
+                        </div>
+                      </div>  
+                  
+                    <!-- Card Start -->
+                 </div>
+                <div>
+                    <span class="text-2xl">Area Colection</span>
+                    <div id="calculationEntry"></div>
+                </div>
+             </div>
+        </div>
+    </section>
+    <script src="js/geometry.js"></script>
+</body>
+</html>
